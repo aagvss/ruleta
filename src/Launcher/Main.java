@@ -1,9 +1,15 @@
+package Launcher;
+
+import Vista.*;
+import controlador.SessionController;
+
 public class Main {
     public static void main(String[] args) {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new VentanaPrincipal().mostrarVentana();
+                SessionController session = new SessionController();
+                new VentanaPrincipal(session).mostrarVentana();
             }
         });
     }

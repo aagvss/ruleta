@@ -1,3 +1,7 @@
+package Vista;
+
+import Modelo.Historial;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
